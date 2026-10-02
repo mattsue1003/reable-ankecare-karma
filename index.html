@@ -489,6 +489,49 @@ table.walk tr:last-child td{border-bottom:0}
 .deckqr{position:absolute;top:110px;background:#fff;border-radius:18px;padding:16px 16px 14px;text-align:center;color:var(--ink);z-index:2;width:262px}
 .deckqr .t{font-size:24px;font-weight:800;margin-top:6px}
 .deckqr a.dl{display:block;font-size:16px;font-weight:700;color:var(--teal);text-decoration:underline;line-height:1.35;margin-top:4px}
+
+.hly{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;flex:1;min-height:0}
+.hly .chart{background:#fff;border-radius:20px;padding:24px 30px;display:flex;flex-direction:column;gap:26px}
+.hly .cap{font-size:24px;font-weight:800;color:#5A7479}
+.hb{display:grid;grid-template-columns:250px 1fr 190px;align-items:center;gap:14px}
+.hb .n{font-size:31px;font-weight:800}.hb .n small{display:block;font-size:19px;font-weight:600;color:#5A7479}
+.hb .t{height:56px;background:#EEF4F3;border-radius:10px;overflow:hidden}
+.hb .f{height:100%;background:var(--teal);border-radius:10px}
+.hb.eu .f{background:#8AA3A6}.hb.lo .f{background:var(--orange)}
+.hb .v{font-size:34px;font-weight:900;white-space:nowrap}.hb .v small{font-size:20px}
+.hly .side{display:flex;flex-direction:column;gap:16px}
+.hly .side .panel{padding:20px 26px;flex:1}
+.hly .side h3{font-size:31px;margin-bottom:8px}
+.hly .side p,.hly .side li{font-size:26px;line-height:1.5}
+
+.ma3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ma3 div{background:#fff;border-radius:16px;padding:18px 22px;border-top:10px solid var(--teal)}
+.ma3 div:nth-child(2){border-top-color:var(--amber)}.ma3 div:nth-child(3){border-top-color:var(--orange)}
+.ma3 b{display:block;font-size:34px;margin-bottom:4px}.ma3 b small{font-size:22px;color:#5A7479;font-weight:700;margin-left:6px}
+.ma3 p{font-size:29px;line-height:1.45}
+.rob{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;margin-top:18px;flex:1}
+.rob .panel{padding:18px 24px}
+.rob h3{font-size:33px;margin-bottom:8px}
+.rob p,.rob li{font-size:29px;line-height:1.5}
+.robbar{display:flex;height:52px;border-radius:10px;overflow:hidden;margin:8px 0;font-size:20px;font-weight:800;color:#fff}
+.robbar span{display:flex;align-items:center;justify-content:center}
+table.mares{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden}
+table.mares th{background:var(--ink);color:#fff;font-size:28px;padding:11px 14px;text-align:left}
+table.mares td{font-size:28px;line-height:1.4;padding:14px 16px;border-bottom:2px solid var(--mist);vertical-align:top}
+table.mares td:first-child{font-weight:900;width:15%}
+table.mares .ok{color:#1F7A55;font-weight:800}.mares .no{color:#8A9A9C;font-weight:700}
+table.mares tr.re td{background:#FFF5EE}
+
+.stp4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;flex:1}
+.stp4>div{background:#fff;border-radius:16px;padding:18px 20px;border-top:12px solid var(--teal);display:flex;flex-direction:column}
+.stp4>div:nth-child(2){border-top-color:var(--amber)}.stp4>div:nth-child(3){border-top-color:var(--orange)}.stp4>div:nth-child(4){border-top-color:#5E8A90}
+.stp4 .lv{font-size:22px;font-weight:900;color:#5A7479}
+.stp4 h3{font-size:33px;margin:4px 0 8px}
+.stp4 p{font-size:30px;line-height:1.5}
+.stp4 .goal{margin-top:auto;background:#F3F8F7;border-radius:10px;padding:12px 14px;font-size:25px;font-weight:800;line-height:1.4}
+.evbox{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-bottom:14px}
+.evbox .panel{padding:14px 22px}
+.evbox p{font-size:26px;line-height:1.45}
 @media (prefers-reduced-motion:reduce){.slide,.slide.active{transition:none;transform:none}}
 @media print{
   html,body{overflow:visible;background:#fff}
@@ -511,8 +554,8 @@ table.walk tr:last-child td{border-bottom:0}
 .exp .res{color:var(--amber);margin-right:12px}
 .slide.quiz.answered .exp{opacity:1;transform:none}
 /* ===== outline ===== */
-.outline{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:18px;flex:1;min-height:0}
-.goto{background:#fff;border:0;border-left:12px solid var(--teal);border-radius:16px;padding:16px 22px;text-align:left;font:800 31px/1.3 var(--sans);color:var(--ink);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.outline{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:18px;flex:1;min-height:0}
+.goto{background:#fff;border:0;border-left:10px solid var(--teal);border-radius:16px;padding:14px 18px;text-align:left;font:800 28px/1.3 var(--sans);color:var(--ink);cursor:pointer;transition:transform .2s,box-shadow .2s}
 .goto:nth-child(4n+2){border-left-color:var(--amber)}.goto:nth-child(4n+3){border-left-color:var(--orange)}.goto:nth-child(4n+4){border-left-color:#5E8A90}
 .goto small{display:block;font-size:21px;font-weight:700;color:#5A7479;margin-bottom:2px}
 .goto:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(18,52,59,.15)}
@@ -641,6 +684,25 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
   <aside class="notes">補上歐洲社會福利國家的數據。用 WHO 同一套方法估算 2019 年：瑞典平均餘命 82.7 歲、健康平均餘命 71.4 歲，不健康餘命約 11.3 年；德國、英國也都在 11.5 年左右。台灣衛福部同年的官方數字約 8.5 年，但兩邊計算方法不同，不能直接說台灣比較好，只能說：北歐一樣有十年以上帶病的時間，並不是兩週。如果換成歐盟的定義，數字差更多。歐盟是用問卷請民眾自己回答：過去至少 6 個月，是否因為健康問題，日常活動受到限制？只要回答有，不論輕重都算不健康，所以丹麥女性的健康年數只有 54.6 年，是歐盟最低。WHO 則是用疾病負擔的方法，把輕微的病痛只打一點折扣。台灣衛福部用的是各年齡層「不健康」的比率；同樣是台灣，國泰健康智庫用疾病負擔法算出的健康餘命是 69.1 歲，衛福部則是 72.5 歲，光是方法不同就差了三年多。所以定義不同，數字就會差很多。北歐真正的強項，是 65 歲之後的健康年數，挪威、瑞典接近或超過 14 年。換句話說，北歐不是臥床兩週，而是在帶病的那些年裡，仍然好好生活。這也就是下一頁要談的：差別在怎麼過這些年。</aside>
 </section>
 
+<section class="slide" data-part="0" style="padding-top:64px">
+  <div class="kicker">65 歲以後，還有幾年沒有活動限制？</div>
+  <h2 style="margin-bottom:14px">北歐名列前茅，台灣怎麼比？</h2>
+  <div class="hly">
+    <div class="chart">
+      <div class="cap">65 歲健康年數（歐盟問卷：沒有因健康而活動受限）</div>
+      <div class="hb "><div class="n">挪威、瑞典女性<small>2005–2019 平均</small></div><div class="t"><div class="f" style="width:89%"></div></div><div class="v">&gt;14.3<small> 年</small></div></div><div class="hb "><div class="n">挪威、瑞典男性<small>2005–2019 平均（含冰島）</small></div><div class="t"><div class="f" style="width:84%"></div></div><div class="v">&gt;13.5<small> 年</small></div></div><div class="hb eu"><div class="n">歐盟平均<small>2018 年，女／男</small></div><div class="t"><div class="f" style="width:62%"></div></div><div class="v">10.0／9.8<small> 年</small></div></div><div class="hb lo"><div class="n">斯洛伐克<small>2005–2019 平均，歐洲最低</small></div><div class="t"><div class="f" style="width:24%"></div></div><div class="v">約 3.9<small> 年</small></div></div>
+      <p style="font-size:27px;line-height:1.5;margin-top:auto">北歐的關鍵不只是數字高：2005–2019 年，北歐「健康年數占餘命的比例」持續上升，研究歸類為<b>「疾病壓縮」</b>，也就是多活的年數，大多活在健康裡。</p>
+    </div>
+    <div class="side">
+      <div class="panel teal"><h3 style="color:#fff">台灣排名多少？</h3><p style="color:#fff">65 歲健康年數，台灣沒有和歐盟同一標準的國際排名。以出生時健康平均餘命比較，2024 年台灣 71.4 歲，排名第 12、亞洲第 5（香港、日本、新加坡、韓國在前）。</p></div>
+      <div class="panel"><h3 class="t">台灣 65 歲的現況</h3><p>65 歲平均還能活 19.9 年（2023）；依衛福部算法，其中約 18% 屬不健康，改用自評健康則約 22%。</p></div>
+      <div class="panel"><h3 class="t">為什麼北歐高？</h3><p>研究者指出與社經條件、醫療品質、健康行為與生活環境有關；收入越不平等的國家，越容易「帶病延長」。自評指標也受文化影響。</p></div>
+    </div>
+  </div>
+  <div class="src">Straka, Šídlo & Kulhánová (2024) Int J Public Health, 69, 1607574（Eurostat HLY，31 國）；Eurostat (2023) 歐盟 65 歲健康年數；國衛院高齡醫學中心統計年報（2023）；衛福部統計處〈精進健康平均餘命統計〉；PRIDE 政策研究指標資料庫（2024）。不同國家定義不同，僅供觀察量級。</div>
+  <aside class="notes">這一頁回答北歐為什麼名列前茅、台灣排第幾。圖上的「65 歲健康年數」，是歐盟用問卷問「過去半年有沒有因健康問題而活動受限」算出來的。2005 到 2019 年的平均，挪威、瑞典女性超過 14.3 年，男性超過 13.5 年，是歐洲最高；歐盟平均大約 10 年，最低的斯洛伐克只有約 4 年。北歐的重點不只是數字高，而是這 15 年間，健康年數占剩餘壽命的比例持續上升，研究稱為疾病壓縮，也就是多活的年數大多活在健康裡。為什麼？研究者提到社經條件、醫療品質、健康行為、生活環境，也有研究發現收入越不平等的國家，越容易出現帶病延長。台灣呢？65 歲健康年數沒有跟歐盟同一標準的國際排名；如果用出生時的健康平均餘命比，2024 年台灣 71.4 歲，排第 12、亞洲第 5。台灣 65 歲的人平均還能活 19.9 年，依衛福部算法其中約 18% 屬於不健康，改用自評健康則約 22%。因為定義不同，這些數字只能看量級，不能直接排高下；但它告訴我們，復能要做的，就是讓多活的那些年，盡量活在健康和參與裡。</aside>
+</section>
+
 <section class="slide quiz" id="q1" data-part="0">
   <div class="kicker">互動問答 1 / 6</div>
   <h2 class="qq">「台灣臨終前臥床 7–8 年、北歐只有 2 週」，這句話怎麼看？</h2>
@@ -767,9 +829,9 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
 <section class="slide" id="t-outline" data-part="0" style="padding-top:72px">
   <div class="kicker">大綱｜點選直接跳頁</div>
   <h2 style="margin-bottom:20px">想看哪一段，點一下就到</h2>
-  <div class="outline"><button class="goto" data-goto="t-myth"><small>開場</small>臥床迷思與不健康餘命</button><button class="goto" data-goto="t-icf"><small>觀念</small>用 ICF 看復能</button><button class="goto" data-goto="t-story"><small>故事</small>阿伯與阿嬤</button><button class="goto" data-goto="t-p1"><small>第一階</small>復能，要恢復什麼？</button><button class="goto" data-goto="t-tools"><small>工具</small>COPM、GAS、Life-Space</button><button class="goto" data-goto="t-factor"><small>研究</small>復能成功的關鍵</button><button class="goto" data-goto="t-p2"><small>第二階</small>站立的證據</button><button class="goto" data-goto="t-wheel"><small>輪椅</small>自己決定去哪裡</button><button class="goto" data-goto="t-product"><small>產品</small>站立式輪椅</button><button class="goto" data-goto="t-subsidy"><small>補助</small>長照與身障補助</button><button class="goto" data-goto="t-p3"><small>第三階</small>一天裡的復能</button><button class="goto" data-goto="t-p4"><small>第四階</small>ICF 階梯與機構</button><button class="goto" data-goto="t-cases"><small>案例</small>台灣做得到</button><button class="goto" data-goto="t-res"><small>資源</small>免費工具 QR</button><button class="goto" data-goto="q1"><small>互動</small>六題問答</button><button class="goto" data-goto="t-apx"><small>附錄</small>研究與參考文獻</button></div>
-  <p class="ohint">簡報中隨時按右下角「☰ 目錄」或鍵盤 O，即可開啟完整目錄。</p>
-  <aside class="notes">這是大綱頁，點任何一格就能直接跳到該段。演講中如果時間不夠，可以從這裡跳到需要的段落；右下角的目錄按鈕或鍵盤 O，也能隨時叫出每一頁的清單。</aside>
+  <div class="outline"><button class="goto" data-goto="t-myth"><small>開場</small>臥床迷思與不健康餘命</button><button class="goto" data-goto="t-icf"><small>觀念</small>用 ICF 看復能</button><button class="goto" data-goto="t-story"><small>故事</small>阿伯與阿嬤</button><button class="goto" data-goto="t-p1"><small>第一階</small>復能，要恢復什麼？</button><button class="goto" data-goto="t-tools"><small>工具</small>COPM、GAS、Life-Space</button><button class="goto" data-goto="t-factor"><small>研究</small>復能成功的關鍵</button><button class="goto" data-goto="t-p2"><small>第二階</small>站立的證據</button><button class="goto" data-goto="t-sts"><small>坐站</small>坐站實證</button><button class="goto" data-goto="t-ststrain"><small>練法</small>站立式輪椅練坐站</button><button class="goto" data-goto="t-wheel"><small>輪椅</small>自己決定去哪裡</button><button class="goto" data-goto="t-product"><small>產品</small>站立式輪椅</button><button class="goto" data-goto="t-subsidy"><small>補助</small>長照與身障補助</button><button class="goto" data-goto="t-p3"><small>第三階</small>一天裡的復能</button><button class="goto" data-goto="t-p4"><small>第四階</small>ICF 階梯與機構</button><button class="goto" data-goto="t-cases"><small>案例</small>台灣做得到</button><button class="goto" data-goto="t-res"><small>資源</small>免費工具 QR</button><button class="goto" data-goto="q1"><small>互動</small>六題問答</button><button class="goto" data-goto="t-apx"><small>附錄</small>研究與參考文獻</button></div>
+  <p class="ohint">簡報中隨時按右上角「☰ 目錄」或鍵盤 O，即可開啟完整目錄。</p>
+  <aside class="notes">這是大綱頁，點任何一格就能直接跳到該段。演講中如果時間不夠，可以從這裡跳到需要的段落；右上角的目錄按鈕或鍵盤 O，也能隨時叫出每一頁的清單。</aside>
 </section>
 
 <section id="t-p1" class="slide dark" data-part="1">
@@ -992,17 +1054,48 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
   <aside class="notes">為什麼生活品質、住院、急診沒有顯著差異？以下是可能的解釋，屬於推論，不是統合分析直接證明的結論。第一，量尺不夠敏感：一般的生活品質問卷涵蓋身體、情緒、社交很多面向，長輩做回一件在乎的事，不一定反映在總分上，這也是 COPM 比較能量到改變的原因。第二，時間太短：復能多半只有 4 到 12 週，而住院和急診主要受疾病和醫療因素影響，需要更長時間追蹤。第三，研究之間差異大：對象、方案和量表都不同，作者也提到結果異質。第四，對照組不是什麼都沒有，而是一般照顧，差距自然比較小。所以沒有差異不等於沒有幫助；挪威多中心研究在 6 個月就看到部分生活品質指標改善。實務上，我們用 COPM、GAS 追蹤個別目標；生活品質和醫療使用，要用更長時間來觀察。</aside>
 </section>
 
-<section class="slide" data-part="1" style="padding-top:78px">
-  <div class="kicker">最新的統合分析（2026）</div>
-  <h2 style="margin-bottom:24px">把練習放進日常活動，效果最穩定</h2>
-  <div class="cols3">
-    <div class="panel"><div class="num">27<small>篇 RCT</small></div><p class="stat-label">4,948 位社區長者的居家復健與復能研究，多數偏誤風險低</p></div>
-    <div class="panel teal"><h3 style="color:#fff">活動導向、運動導向</h3><p style="font-size:33px">基本 ADL 有小幅改善（效果量 0.29，屬「小」；證據確定性中等），身體表現也有進步</p></div>
-    <div class="panel"><h3 class="t">復能導向</h3><p style="font-size:31px">只有 2 篇（291 人）能合併分析，比較的是 COPM 與身體表現；研究太少，還不足以下定論</p></div>
+<section class="slide" data-part="1" style="padding-top:62px">
+  <div class="kicker">最新的統合分析（瑞典卡羅琳學院，2026）</div>
+  <h2 style="margin-bottom:14px">這篇研究在比什麼？可信嗎？</h2>
+  <p style="font-size:29px;margin-bottom:14px;color:#3E5A60">27 篇隨機試驗、4,948 位 74–87 歲、體能差或日常活動有困難的居家長者；由職能、物理治療師到宅介入，與一般照顧比較。研究者把介入分成三種：</p>
+  <div class="ma3">
+    <div><b>活動導向<small>11 篇</small></b><p>直接練日常活動：評估 ADL、訂個人活動目標、簡化或調整做法、提供輔具與改造環境</p></div>
+    <div><b>運動導向<small>13 篇</small></b><p>以個別化、漸進的運動為主：肌力、平衡、功能性動作、轉位、走路</p></div>
+    <div><b>復能導向<small>3 篇</small></b><p>跨專業團隊訂個人目標，治療師指導居服員，陪長輩自己完成日常活動</p></div>
   </div>
-  <div class="verdict" style="margin-top:22px;font-size:32px;padding:18px 32px">啟示：效果是「小而確定」；把練習嵌入真實的日常活動，並用 COPM 等個人化指標追蹤。</div>
-  <div class="src">The components and effects of home rehabilitation on ADL and physical performance of community dwelling older people with low physical performance: a systematic review and meta-analysis of RCTs (2026). BMC Geriatrics. doi:10.1186/s12877-026-07887-9</div>
-  <aside class="notes">這是今年最新的統合分析，納入 27 篇隨機試驗、近五千位長者。它把居家復健分成三種取向：活動導向、運動導向和復能導向。活動導向與運動導向對基本 ADL 都有小幅、但確定性中等的改善；復能導向的研究數量少，只有 2 篇、291 人的資料能合併分析，比較的是 COPM 的表現、滿意度和身體表現；作者認為復能導向的證據仍然有限。這不是說復能沒效，而是用同樣量尺做的研究還太少，不足以下定論。所以要誠實說：效果不大，但穩定。對我們的意義是：把練習放進日常活動裡，並用長輩自己的目標來追蹤。</aside>
+  <div class="rob">
+    <div class="panel">
+      <h3 class="t">「偏誤風險」是什麼？</h3>
+      <p>用 13 題檢核表檢查研究設計：有沒有真的隨機分組、評估者知不知道誰在哪組、追蹤是否完整等。分數越高，結果越不容易被設計漏洞扭曲。</p>
+    </div>
+    <div class="panel">
+      <h3 class="t">27 篇的檢核結果</h3>
+      <div class="robbar"><span style="width:85%;background:#2E9E6A">低 23 篇</span><span style="width:11%;background:var(--amber)">中 3</span><span style="width:4%;background:var(--orange)">1</span></div>
+      <p>大多數研究設計嚴謹；最常見的扣分是長輩與治療師無法「不知道」自己在哪一組。</p>
+    </div>
+  </div>
+  <div class="src">Högstedt K, Grooten WJA, Flink M, Baudin K, Guidetti S, Rydwik E (2026). BMC Geriatrics, 26, 889. doi:10.1186/s12877-026-07887-9（偏誤風險：JBI 隨機試驗檢核表）</div>
+  <aside class="notes">先說這篇研究在做什麼。瑞典卡羅琳學院的團隊，整理了 27 篇隨機試驗、將近五千位 74 到 87 歲的居家長者，他們都是體能比較差、或日常活動有困難的人，由職能治療師和物理治療師到家裡介入，再跟一般照顧比較。研究者把這些介入分成三種：活動導向，就是直接練日常活動，像是評估 ADL、訂個人目標、簡化做法、提供輔具和改造環境，美國的 CAPABLE 就屬於這類；運動導向，是以個別化、漸進的運動為主，練肌力、平衡、轉位和走路；復能導向，是跨專業團隊訂個人目標，治療師指導居服員，陪長輩自己做，只有 3 篇。至於「偏誤風險」，就是用 13 題的檢核表，檢查研究有沒有真的隨機分組、評估的人知不知道誰在哪一組、追蹤是不是完整。27 篇中有 23 篇偏誤風險低，表示大多數研究設計嚴謹；最常見的扣分，是長輩和治療師很難不知道自己在哪一組，這在復健研究幾乎無法避免。</aside>
+</section>
+
+<section class="slide" data-part="1" style="padding-top:62px">
+  <div class="kicker">結果：哪些有效、效果多大？</div>
+  <h2 style="margin-bottom:12px">直接練日常活動，基本 ADL 進步最確定</h2>
+  <table class="mares">
+    <thead><tr><th>方法</th><th>日常活動（ADL）</th><th>身體表現（站、走、平衡）</th><th>證據可信度</th></tr></thead>
+    <tbody>
+      <tr><td style="color:var(--teal)">活動導向</td><td><span class="ok">基本 ADL 有效</span>：效果 0.29（小），1,048 人<br><span class="no">IADL、指定活動：無差異</span></td><td class="no">多數研究沒有測量</td><td>基本 ADL：<b>中</b></td></tr>
+      <tr><td style="color:#A46A1C">運動導向</td><td><span class="ok">基本 ADL 有效</span>：效果 0.43（小到中），310 人</td><td><span class="ok">有效</span>：效果 0.20（小），1,472 人</td><td>ADL：<b>很低</b><br>身體表現：<b>低</b></td></tr>
+      <tr class="re"><td style="color:var(--orange)">復能導向</td><td><span class="no">COPM 表現 +0.30 分、滿意度 +0.19 分（滿分 10）：未達顯著</span>，291 人（2 篇）</td><td><span class="no">效果 0.12：未達顯著</span>，555 人（3 篇）</td><td>COPM 表現：<b>很低</b><br>其他：<b>低</b></td></tr>
+    </tbody>
+  </table>
+  <div class="cols" style="grid-template-columns:1fr 1fr;gap:18px;margin-top:14px">
+    <div class="panel" style="padding:14px 22px"><p style="font-size:27px;line-height:1.45"><b>怎麼讀「效果」：</b>0.2 小、0.5 中、0.8 大。COPM 一般進步 2 分才有臨床意義，合併後只多 0.3 分。</p></div>
+    <div class="panel" style="padding:14px 22px"><p style="font-size:27px;line-height:1.45"><b>復能導向為何沒差異：</b>只有 3 篇、結果不一致；其中挪威那篇單獨看是有效的，合併後被拉平。</p></div>
+  </div>
+  <div class="verdict" style="margin-top:12px;font-size:28px;padding:12px 26px">結論：把練習放進真實日常活動，基本 ADL 小幅但確定地進步；復能導向研究還太少，需要更多、用同一量尺的研究。</div>
+  <div class="src">Högstedt et al. (2026) BMC Geriatr 26:889，Table 3。效果為標準化平均差（SMD）；COPM 為平均差（MD）。復能導向含 Tuntland 2015（挪威）、Gustafsson 2025（瑞典）、Rooijackers 2021（荷蘭）。</div>
+  <aside class="notes">接著看結果。活動導向，也就是直接練日常活動：基本 ADL 有效，效果量 0.29，屬於小，合併 1,048 人，證據可信度中等，是這篇研究裡最確定的發現；但 IADL 和指定活動沒有差異，而且多數活動導向研究沒有測身體表現。運動導向：基本 ADL 效果 0.43，看起來比較大，但只有 310 人、可信度很低；身體表現效果 0.20，合併 1,472 人，可信度低。所以回答「身體表現跟 ADL 比起來」：運動導向對身體表現的效果比較小、但人數多比較穩；對 ADL 的效果數字較大、但證據不穩。復能導向：COPM 表現只多 0.30 分、滿意度多 0.19 分，滿分 10 分，一般要進步 2 分才算有臨床意義，而且未達統計顯著；身體表現效果 0.12，也未達顯著。為什麼？因為只有 3 篇，而且結果不一致：挪威 Tuntland 那篇單獨看是有效的，但荷蘭那篇是訓練居服員、沒有看到長輩改變，合併後就被拉平了。所以結論是：把練習放進真實的日常活動，基本 ADL 會小幅但確定地進步；復能導向目前研究太少，不是沒有效，而是證據還不夠，需要更多用同一量尺的研究，這也是台灣可以貢獻的地方。</aside>
 </section>
 
 <section id="t-factor" class="slide" data-part="1" style="padding-top:80px">
@@ -1241,7 +1334,7 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
   <aside class="notes">兩種證據放在一起很有意思：能站的人比較不會失能，但單獨練站，還沒被證實會自動轉成 ADL 進步。所以要站著刷牙、站著拿衣服、如廁時起身轉位，把站立放進任務裡。</aside>
 </section>
 
-<section class="slide" data-part="2" style="padding-top:66px">
+<section id="t-sts" class="slide" data-part="2" style="padding-top:66px">
   <div class="kicker">坐站運動（Sit-to-Stand）的實證</div>
   <h2 style="margin-bottom:16px">坐站：最簡單、也最能預測未來的一個動作</h2>
   <div class="sts">
@@ -1290,6 +1383,23 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
   <div class="verdict" style="margin-top:14px;font-size:29px;padding:14px 28px">第一次由治療師陪同；有不適先降回坐姿或後傾，再通知醫護，紀錄後調整角度與時間。</div>
   <div class="src">姿勢性低血壓定義：Freeman et al. (2011) Clin Auton Res, 21, 69–72；RESNA (2013, 2024) 站立裝置立場文件；康揚產品使用注意事項。分段角度與伸手範圍依型號與個案評估而定。</div>
   <aside class="notes">站立式電動輪椅不只能全站，也可以停在中間的角度，例如 1/4、1/3 或 1/2，讓長輩先在半站姿適應，耐受了再往上，這樣也等於把坐站的難度切小，先練前半段。站著的時候，在頂膝和胸帶固定下，可以練往前、往兩側伸手，例如拿高櫃的碗、桌上的杯子、遞東西給家人，慢慢加遠距離，練重心轉移和平衡，最好直接變成備餐、整理、拜拜這些真實任務。安全上，開始前確認煞車、頂膝、胸帶和腳踏；在站前、站立一到三分鐘，以及坐回後量血壓和心跳。如果出現頭暈、眼前發黑、冒冷汗、噁心、臉色蒼白，或收縮壓下降 20、舒張壓下降 10 毫米汞柱以上，這是姿勢性低血壓的常用定義，另外像胸痛、喘、疼痛或痙攣加劇，都要立即降回坐姿或後傾，再通知醫護人員。第一次一定由治療師陪同，之後依紀錄調整角度和時間。各型號能停的角度與功能不同，以原廠說明和評估為準。</aside>
+</section>
+
+<section id="t-ststrain" class="slide" data-part="2" style="padding-top:62px">
+  <div class="kicker">用站立式電動輪椅練坐站</div>
+  <h2 style="margin-bottom:12px">從高處起身、從輔助到自己：四階段練法</h2>
+  <div class="evbox">
+    <div class="panel"><p><b class="t">研究根據：</b>座椅高度是起身難易最重要的因素之一；座高從 64 公分降到 43 公分，髖、膝關節最大出力分別增加 2.4 倍與 1.9 倍。用電動先升到半站，等於把起立「調低難度」，再逐步降低起點。</p></div>
+    <div class="panel teal"><p style="color:#fff"><b style="color:var(--amber)">誠實說：</b>目前沒有直接比較「用站立式輪椅練坐站」的隨機試驗；以下依起立生物力學與漸進訓練原則整理。</p></div>
+  </div>
+  <div class="stp4">
+    <div><span class="lv">階段 1</span><h3>電動全站，先適應</h3><p>頂膝、胸帶固定，由電動完成站立；練站姿耐受，量血壓與心跳</p><div class="goal">目標：站 5 分鐘不頭暈</div></div>
+    <div><span class="lv">階段 2</span><h3>電動半程，自己完成後半</h3><p>電動升到 1/2，長輩手扶、身體前傾，自己出力站完；坐回時慢慢控制</p><div class="goal">目標：連續完成 5 次</div></div>
+    <div><span class="lv">階段 3</span><h3>降低起點</h3><p>起點從 1/2 降到 1/3、1/4，最後從坐姿自己站；每次只降一級</p><div class="goal">目標：能完成 5 次才降一級</div></div>
+    <div><span class="lv">階段 4</span><h3>站起來做事</h3><p>站著伸手取物、備餐、盥洗、和家人平視聊天，把坐站變成生活的一部分</p><div class="goal">追蹤：30 秒坐站次數、站立時間</div></div>
+  </div>
+  <div class="src">Janssen, Bussmann & Stam (2002) Phys Ther, 82, 866–879（起立的決定因素回顧）；Yoshioka et al. (2014) Biomed Eng Online, 13, 27（座高與髖膝力矩）；Pollock et al. (2014) Cochrane CD007232。各型號可停角度不同，第一次由治療師評估與陪同。</div>
+  <aside class="notes">這一頁說明怎麼用站立式電動輪椅來練坐站。研究根據是起立的生物力學：座椅高度是起身難易最重要的因素之一，研究發現座高從 64 公分降到 43 公分，髖關節和膝關節的最大出力分別增加 2.4 倍和 1.9 倍。所以先用電動把長輩升到半站，再讓他自己完成後半段，就等於把起立的難度調低；能力進步了，再一級一級降低起點。要誠實說，目前沒有直接比較用站立式輪椅練坐站的隨機試驗，這是依生物力學和漸進訓練原則整理的做法。四個階段：第一，電動全站，頂膝和胸帶固定，先練站姿耐受，同時量血壓和心跳，目標是站 5 分鐘不頭暈。第二，電動升到一半，長輩手扶、身體前傾，自己出力站完後半段，坐回時慢慢控制，目標連續 5 次。第三，降低起點，從 1/2 降到 1/3、1/4，最後從坐姿自己站，每次只降一級，能完成 5 次才往下降。第四，站起來做事，伸手拿東西、備餐、盥洗、和家人平視聊天，把坐站變成生活的一部分，並用 30 秒坐站次數和站立時間追蹤進步。</aside>
 </section>
 
 <section class="slide" data-part="2" style="padding-top:66px">
@@ -2303,7 +2413,7 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
 <section class="slide hide-rail" data-part="4" style="padding-bottom:70px">
   <h2 style="margin-bottom:28px">參考文獻（續二）</h2>
   <ul class="refs clean">
-    <li>The components and effects of home rehabilitation on ADL and physical performance of community dwelling older people with low physical performance: SR and meta-analysis of RCTs (2026). BMC Geriatrics. doi:10.1186/s12877-026-07887-9</li>
+    <li>Högstedt K, Grooten WJA, Flink M, Baudin K, Guidetti S, Rydwik E (2026). The components and effects of home rehabilitation on ADL and physical performance of community dwelling older people with low physical performance. BMC Geriatrics, 26, 889.</li>
     <li>報導者（2025）。被低估的「復能」：翻轉長照與尊嚴的界線，失能不再是終點。</li>
     <li>工商時報（2025-12-09）。長照 3.0 將上路！衛福部首屆「金顧獎」表揚 26 名照服員。</li>
     <li>衛生福利部（108 年 4 月）。長照復能服務操作指引（觀念篇）。</li>
@@ -2317,6 +2427,8 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
     <li>Cooper R, Kuh D, Hardy R (2010). Objectively measured physical capability levels and mortality: systematic review and meta-analysis. BMJ, 341, c4467.</li>
     <li>Slaughter SE, et al. (2013). Optimizing the mobility of residents with dementia: a pilot study. BMC Geriatrics, 13, 110；MOVE 研究計畫 (2011) BMC Geriatrics, 11, 84.</li>
     <li>Freeman R, et al. (2011). Consensus statement on the definition of orthostatic hypotension. Clin Auton Res, 21, 69–72.</li>
+    <li>Straka J, Šídlo L, Kulhánová I (2024). Trends in healthy life years between 2005 and 2019 in 31 European countries: the compression or expansion of morbidity? Int J Public Health, 69, 1607574.</li>
+    <li>Janssen WG, Bussmann HB, Stam HJ (2002). Determinants of the sit-to-stand movement: a review. Phys Ther, 82(9), 866–879；Yoshioka S, et al. (2014). Biomed Eng Online, 13, 27.</li>
     <li>Albrecht GL, Devlieger PJ (1999). The disability paradox: high quality of life against all odds. Soc Sci Med, 48(8), 977–988.</li>
     <li>Fellinghauer B, et al. (2012). Explaining the disability paradox: a cross-sectional analysis of the Swiss general population. BMC Public Health.</li>
     <li>公視新聞網（2024）。國人不健康餘命拉長至 7.78 年；衛福部統計處〈精進健康平均餘命統計〉。</li>
@@ -2328,19 +2440,19 @@ a.fblink{display:block;margin-top:8px;font-size:22px;font-weight:800;color:var(-
 <section class="slide hide-rail" data-part="4" style="padding-bottom:70px">
   <h2 style="margin-bottom:28px">產品與補助資料來源</h2>
   <ul class="refs clean" style="columns:1">
-    <li style="font-size:32px!important">康揚行動輔具：站立式輪椅系列、EVO Altus、兜風站 KP-80、元氣站 SME、易立站 KP-80A 產品頁，以及輪椅租借方案頁（<a class="lnk" href="https://www.karma.com.tw/" target="_blank" rel="noopener">karma.com.tw</a>，2026 年 9 月查閱）。</li>
-    <li style="font-size:32px!important">站立式電動輪椅示範影片：<a class="lnk" href="https://www.youtube.com/watch?v=GqKH2QN0IM0" target="_blank" rel="noopener">youtube.com/watch?v=GqKH2QN0IM0</a></li>
-    <li style="font-size:32px!important">RCOT #LiveNotExist《Fred's Story》：<a class="lnk" href="https://youtu.be/8S7P0ON9w1A" target="_blank" rel="noopener">youtu.be/8S7P0ON9w1A</a></li>
-    <li style="font-size:32px!important">家屬與專業工具：復能怎麼用（<a class="lnk" href="https://mattsue1003.github.io/reable-family-client/" target="_blank" rel="noopener">mattsue1003.github.io/reable-family-client</a>）、我想要的生活 復能視覺化引導圖卡（<a class="lnk" href="https://reablement-goal-cards-tw.tedandet.chatgpt.site/" target="_blank" rel="noopener">reablement-goal-cards-tw.tedandet.chatgpt.site</a>）、復健復能處方箋開立系統（<a class="lnk" href="https://mattsue1003.github.io/reablepre/" target="_blank" rel="noopener">mattsue1003.github.io/reablepre</a>）。</li>
-    <li style="font-size:32px!important">線上課程：TaiwanLIFE「Reablement」（高雄醫學大學）<a class="lnk" href="https://taiwanlife.org/admin/tool/mooccourse/mnetcourseinfo.php?hostid=15&amp;id=4102" target="_blank" rel="noopener">taiwanlife.org 課程頁</a></li>
-    <li style="font-size:32px!important">本場講義（HTML 簡報）：<a class="lnk" href="https://mattsue1003.github.io/reable-ankecare-karma/" target="_blank" rel="noopener">mattsue1003.github.io/reable-ankecare-karma</a></li>
-    <li style="font-size:32px!important">長照輔具資料庫：<a class="lnk" href="https://mattsue1003.github.io/long-term-care-assistive-devices-database/" target="_blank" rel="noopener">mattsue1003.github.io/long-term-care-assistive-devices-database</a></li>
-    <li style="font-size:32px!important">溝通學習資源：動機式晤談實務指南（<a class="lnk" href="https://mattsue1003.github.io/motivational-interviewing/" target="_blank" rel="noopener">mattsue1003.github.io/motivational-interviewing</a>）、失智症溝通技巧資料庫（<a class="lnk" href="https://mattsue1003.github.io/dementia-communication-database/" target="_blank" rel="noopener">mattsue1003.github.io/dementia-communication-database</a>）。</li>
-    <li style="font-size:32px!important">衛生福利部長照專區（1966）：輔具及居家無障礙環境改善、長期照顧輔具租賃服務項目。</li>
-    <li style="font-size:32px!important">衛生福利部新聞稿（115-07-01）：長照智慧科技輔具全租賃制 7 月起上路，首批 17 件產品通過審議納入給付。</li>
-    <li style="font-size:32px!important">桃園市長期照顧輔具租賃服務項目表。</li>
-    <li style="font-size:32px!important">身心障礙者輔具費用補助辦法（111 年 10 月 20 日修正，112 年 1 月 1 日施行）及附表補助基準表。</li>
-    <li style="font-size:32px!important">價格、租金與補助金額可能調整，實際以廠商報價、各縣市公告及輔具評估報告為準。</li>
+    <li style="font-size:27px!important">康揚行動輔具：站立式輪椅系列、EVO Altus、兜風站 KP-80、元氣站 SME、易立站 KP-80A 產品頁，以及輪椅租借方案頁（<a class="lnk" href="https://www.karma.com.tw/" target="_blank" rel="noopener">karma.com.tw</a>，2026 年 9 月查閱）。</li>
+    <li style="font-size:27px!important">站立式電動輪椅示範影片：<a class="lnk" href="https://www.youtube.com/watch?v=GqKH2QN0IM0" target="_blank" rel="noopener">youtube.com/watch?v=GqKH2QN0IM0</a></li>
+    <li style="font-size:27px!important">RCOT #LiveNotExist《Fred's Story》：<a class="lnk" href="https://youtu.be/8S7P0ON9w1A" target="_blank" rel="noopener">youtu.be/8S7P0ON9w1A</a></li>
+    <li style="font-size:27px!important">家屬與專業工具：復能怎麼用（<a class="lnk" href="https://mattsue1003.github.io/reable-family-client/" target="_blank" rel="noopener">mattsue1003.github.io/reable-family-client</a>）、我想要的生活 復能視覺化引導圖卡（<a class="lnk" href="https://reablement-goal-cards-tw.tedandet.chatgpt.site/" target="_blank" rel="noopener">reablement-goal-cards-tw.tedandet.chatgpt.site</a>）、復健復能處方箋開立系統（<a class="lnk" href="https://mattsue1003.github.io/reablepre/" target="_blank" rel="noopener">mattsue1003.github.io/reablepre</a>）。</li>
+    <li style="font-size:27px!important">線上課程：TaiwanLIFE「Reablement」（高雄醫學大學）<a class="lnk" href="https://taiwanlife.org/admin/tool/mooccourse/mnetcourseinfo.php?hostid=15&amp;id=4102" target="_blank" rel="noopener">taiwanlife.org 課程頁</a></li>
+    <li style="font-size:27px!important">本場講義（HTML 簡報）：<a class="lnk" href="https://mattsue1003.github.io/reable-ankecare-karma/" target="_blank" rel="noopener">mattsue1003.github.io/reable-ankecare-karma</a></li>
+    <li style="font-size:27px!important">長照輔具資料庫：<a class="lnk" href="https://mattsue1003.github.io/long-term-care-assistive-devices-database/" target="_blank" rel="noopener">mattsue1003.github.io/long-term-care-assistive-devices-database</a></li>
+    <li style="font-size:27px!important">溝通學習資源：動機式晤談實務指南（<a class="lnk" href="https://mattsue1003.github.io/motivational-interviewing/" target="_blank" rel="noopener">mattsue1003.github.io/motivational-interviewing</a>）、失智症溝通技巧資料庫（<a class="lnk" href="https://mattsue1003.github.io/dementia-communication-database/" target="_blank" rel="noopener">mattsue1003.github.io/dementia-communication-database</a>）。</li>
+    <li style="font-size:27px!important">衛生福利部長照專區（1966）：輔具及居家無障礙環境改善、長期照顧輔具租賃服務項目。</li>
+    <li style="font-size:27px!important">衛生福利部新聞稿（115-07-01）：長照智慧科技輔具全租賃制 7 月起上路，首批 17 件產品通過審議納入給付。</li>
+    <li style="font-size:27px!important">桃園市長期照顧輔具租賃服務項目表。</li>
+    <li style="font-size:27px!important">身心障礙者輔具費用補助辦法（111 年 10 月 20 日修正，112 年 1 月 1 日施行）及附表補助基準表。</li>
+    <li style="font-size:27px!important">價格、租金與補助金額可能調整，實際以廠商報價、各縣市公告及輔具評估報告為準。</li>
   </ul>
   <aside class="notes">產品與補助資料來源頁。</aside>
 </section>
